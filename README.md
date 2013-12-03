@@ -15,22 +15,31 @@ git submodule init
 git submodule update
 ```
 
-Update all submodules
----------------------
+Add a new plugin as git submodule in .vim/bundle
+------------------------------------------------
+```bash
+cd ~/.vim
+git submodule add https://github.com/<account>/<plugin-repo>.git bundle/<plugin-name>
+git add .
+git commit -m "Install <plugin-name> bundle as a submodule."
+```
+
+Update all plugins and pathogen
+-------------------------------
 ```bash
 cd ~/.vim
 git submodule foreach git pull origin master
 ```
 
-Update an individual module
+Update an individual plugin
 ---------------------------
 ```bash
 cd ~/.vim/bundle/foo
 git pull origin master
 ```
 
-Add pathogen as git submodule in .vim
--------------------------------------
+Add pathogen as git submodule in .vim/pathogen
+----------------------------------------------
 ```bash
 cd ~/.vim
 git submodule add https://github.com/tpope/vim-pathogen.git pathogen
