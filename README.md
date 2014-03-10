@@ -1,3 +1,5 @@
+__NOTE:__ I've abandoned pathogen in favor of vundle. vundle plays nicer with initial setup of a box. I have one less repo to worry about (dotfiles only vs. dotfiles and dotvim).
+
 Vim configuration and plugins
 =============================
 
